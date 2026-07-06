@@ -33,3 +33,7 @@ console.log(arr5.join("+"));
 //problem-7
 let arr6 = ["car", "cycle", "bike", "toyota"];
 console.log(arr6.join("|"));
+
+//problem-8
+let num = [1, 2, 3, 4, 5, 6, 7];
+console.log(num.slice(1, 4));
