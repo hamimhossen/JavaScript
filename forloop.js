@@ -67,3 +67,12 @@ for (let i = 1; i <= 20; i++) {
     }
     console.log(i);
 }
+
+//per year salary increment using for loop
+var experience = 3;
+var startingSalary = 15000;
+for (var i = 1; i <= experience; i++) {
+    var startingSalary = startingSalary + (startingSalary * 5) / 100;
+    console.log("Year " + i + " Salary " + " = ", startingSalary.toFixed(2));
+}
+console.log("Final Salary: ", startingSalary.toFixed(2));

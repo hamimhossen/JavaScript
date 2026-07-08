@@ -12,4 +12,4 @@ console.log(numbers2.indexOf(3));
 let num1 = 10;
 console.log(Array.isArray(num1));
 
-console.log(Array.isArray(numbers));
+console.log(Array.isArray(numbers2));
