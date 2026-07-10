@@ -1,6 +1,12 @@
-const name = "i am a web developer";
-let reverse = "";
-for (let nam of name) {
-    reverse = nam + reverse;
+function arrayNum(number) {
+    let broke = number.split(" ");
+    let longestWord = "";
+    for (let part of broke) {
+        if (part.length > longestWord.length) {
+            longestWord = part;
+        }
+    }
+    return longestWord;
 }
-console.log(reverse);
+let result = arrayNum("My Country Name Of bangladesh");
+console.log(result);

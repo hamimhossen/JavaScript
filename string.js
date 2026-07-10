@@ -32,10 +32,19 @@ const lastName = "sara";
 console.log(firstName + " " + lastName);
 console.log(firstName.concat(" ").concat(lastName));
 
-//string reverse
+//string character wise reverse
 let reverse = "";
 let sentence = "I am learning web development";
 for (let letter of sentence) {
     reverse = letter + reverse;
+}
+console.log(reverse);
+
+//word wise reverse
+let colors = "I love JavaScript";
+let res = colors.split(" ");
+let reverse = "";
+for (let name of res) {
+    reverse = name + " " + reverse;
 }
 console.log(reverse);
