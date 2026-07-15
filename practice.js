@@ -1,12 +1,24 @@
-function arrayNum(number) {
-    let broke = number.split(" ");
-    let longestWord = "";
-    for (let part of broke) {
-        if (part.length > longestWord.length) {
-            longestWord = part;
+function isSame(number) {
+    let sum = 0;
+    let avg;
+    let len = number.length;
+    let pass = 0;
+    let fail = 0;
+    for (let num of number) {
+        sum = sum + num;
+        avg = Math.round(sum / len);
+        if (num >= 40) {
+            pass++;
+        }
+        if (num <= 40) {
+            fail++;
         }
     }
-    return longestWord;
+    return {
+        finalSore: avg,
+        pass: pass,
+        fail: fail,
+    };
 }
-let result = arrayNum("My Country Name Of bangladesh");
-console.log(result);
+const arr1 = isSame([98, 87, 67, 91, 92, 33, 87]);
+console.log(arr1);
